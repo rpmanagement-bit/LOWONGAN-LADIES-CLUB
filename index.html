@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP Management - Official Recruitment</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FFF2C6',
+                            200: '#FDE492',
+                            300: '#F7CE5B',
+                            400: '#EAB308',
+                            500: '#D97706',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF0C0 0%, #E2B24A 35%, #D49A28 60%, #FFF5D0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gold-bright {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFE17D 50%, #EBB138 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .border-gold-glow {
+            border: 1px solid rgba(226, 178, 74, 0.45);
+            box-shadow: 0 0 20px rgba(212, 154, 40, 0.2), inset 0 0 10px rgba(212, 154, 40, 0.05);
+        }
+
+        .border-gold-bright {
+            border: 1.5px solid #E2B24A;
+            box-shadow: 0 0 25px rgba(226, 178, 74, 0.35);
+        }
+
+        .bg-gold-badge {
+            background: linear-gradient(135deg, #C8912A 0%, #F5CE6B 50%, #A46F17 100%);
+        }
+
+        .bg-card-dark {
+            background: linear-gradient(180deg, rgba(20, 20, 25, 0.95) 0%, rgba(8, 8, 10, 0.98) 100%);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 flex justify-center items-center">
+
+    <!-- CONTAINER UTAMA -->
+    <div class="max-w-md w-full mx-auto relative">
+
+        <!-- BRANDING HEADER -->
+        <header class="text-center mb-6">
+            <div class="inline-flex items-center justify-center p-2 mb-2">
+                <div class="w-16 h-16 rounded-full border-2 border-amber-400 flex items-center justify-center bg-black/90 shadow-[0_0_25px_rgba(217,119,6,0.35)]">
+                    <span class="font-serif text-2xl font-black text-gold-gradient">RP</span>
+                </div>
+            </div>
+            <h1 class="font-serif text-xs tracking-[0.35em] uppercase text-amber-300 font-bold">RP MANAGEMENT</h1>
+            <div class="w-28 h-[1px] bg-gradient-to-r from-transparent via-amber-400/70 to-transparent mx-auto mt-2"></div>
+        </header>
+
+        <!-- TITLE LOWONGAN -->
+        <section class="text-center mb-6">
+            <p class="text-[10px] tracking-[0.25em] text-amber-400/90 font-bold uppercase mb-1">LOWONGAN</p>
+            <h2 class="font-serif text-3xl font-black uppercase text-gold-bright tracking-tight">
+                LADIES CLUB
+            </h2>
+            <div class="mt-2 inline-block bg-gold-badge text-black font-extrabold text-xs uppercase tracking-widest px-5 py-1 rounded shadow-lg shadow-amber-500/20">
+                EXECUTIVE
+            </div>
+            <p class="text-xs text-amber-100/90 italic mt-3 max-w-xs mx-auto leading-relaxed uppercase tracking-tight">
+                BERGABUNGLAH BERSAMA KAMI DAN RAIH PENGHASILAN TINGGI DENGAN FASILITAS TERBAIK!
+            </p>
+        </section>
+
+        <!-- SYARAT & BENEFIT (SESUAI GAMBAR PAMFLET) -->
+        <div class="rounded-2xl border-gold-glow bg-card-dark p-5 mb-6 space-y-4">
+            <!-- SYARAT -->
+            <div>
+                <h3 class="font-serif text-xs font-bold text-amber-300 uppercase mb-2.5 flex items-center gap-2 border-b border-amber-500/20 pb-1.5">
+                    <i class="fa-solid fa-list-check text-amber-400"></i> SYARAT :
+                </h3>
+                <div class="grid grid-cols-1 gap-2 text-xs text-gray-200">
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-user-large text-amber-400 w-4 text-center"></i>
+                        <span>WANITA</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-id-card text-amber-400 w-4 text-center"></i>
+                        <span>USIA 18-29 THN</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-star text-amber-400 w-4 text-center"></i>
+                        <span>BERPENAMPILAN MENARIK</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-person text-amber-400 w-4 text-center"></i>
+                        <span>BENTUK TUBUH PROPOSIONAL/IDEAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BENEFIT -->
+            <div>
+                <h3 class="font-serif text-xs font-bold text-amber-300 uppercase mb-2.5 flex items-center gap-2 border-b border-amber-500/20 pb-1.5">
+                    <i class="fa-solid fa-gift text-amber-400"></i> BENEFIT :
+                </h3>
+                <div class="grid grid-cols-1 gap-2 text-xs text-gray-200">
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-house-user text-amber-400 w-4 text-center"></i>
+                        <span>TEMPAT TINGGAL / MESS</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-scissors text-amber-400 w-4 text-center"></i>
+                        <span>SALON KECANTIKAN</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-notes-medical text-amber-400 w-4 text-center"></i>
+                        <span>PRIKSA KESEHATAN 1X1BULAN</span>
+                    </div>
+                    <div class="bg-black/60 p-2.5 rounded-xl border border-amber-500/15 flex items-center gap-2.5">
+                        <i class="fa-solid fa-car text-amber-400 w-4 text-center"></i>
+                        <span>ANTAR JEMPUT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESTIMASI GAJI -->
+        <div class="rounded-2xl border-gold-bright bg-gradient-to-b from-amber-950/50 via-black to-black p-4 text-center mb-6">
+            <h3 class="font-serif text-2xl font-black text-gold-bright mb-1">GAJI 15-25JT PERBULAN</h3>
+            <h4 class="font-serif text-xl font-extrabold text-white mb-2">BISA LEBIH</h4>
+            <p class="text-[11px] font-bold text-black bg-amber-400 py-1.5 px-4 rounded-full inline-block shadow-md uppercase tracking-wider">
+                UANG TIP MILIK SENDIRI
+            </p>
+        </div>
+
+        <!-- PENEMPATAN -->
+        <div class="rounded-xl border border-amber-500/30 bg-black/60 p-3 mb-6 text-center flex items-center justify-center gap-2">
+            <i class="fa-solid fa-location-dot text-amber-400 text-base"></i>
+            <span class="text-xs font-bold text-amber-200 tracking-wide uppercase">PENEMPATAN: JAKARTA BARAT - JAKARTA PUSAT</span>
+        </div>
+
+        <!-- FORMULIR PENDAFTARAN -->
+        <section class="rounded-2xl border-gold-glow bg-card-dark p-5 mb-6">
+            <div class="text-center mb-4 pb-3 border-b border-amber-500/20">
+                <h3 class="font-serif text-sm font-bold text-gold-bright uppercase">FORMULIR PENDAFTARAN</h3>
+                <p class="text-xs text-amber-200/90 font-semibold mt-1">Mohon Di Isi Terlebih Dahulu Data Di Bawah ⬇️</p>
+            </div>
+
+            <form onsubmit="kirimPendaftaran(event)" class="space-y-3.5 text-xs">
+                <!-- Nama Sesuai KTP -->
+                <div>
+                    <label class="block font-semibold text-amber-200 mb-1">• Nama Sesuai KTP :</label>
+                    <input type="text" id="namaKtp" required placeholder="Sesuai nama di KTP Anda" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                </div>
+
+                <!-- Umur & TB BB -->
+                <div class="grid grid-cols-2 gap-2.5">
+                    <div>
+                        <label class="block font-semibold text-amber-200 mb-1">• Umur :</label>
+                        <input type="number" id="umur" min="18" max="29" required placeholder="Contoh: 22" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-amber-200 mb-1">• TB & BB :</label>
+                        <input type="text" id="tbBb" required placeholder="165 cm / 50 kg" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                    </div>
+                </div>
+
+                <!-- Tempat Tinggal Sekarang -->
+                <div>
+                    <label class="block font-semibold text-amber-200 mb-1">• Tempat Tinggal Sekarang :</label>
+                    <input type="text" id="tempatTinggal" required placeholder="Contoh: Jakarta Barat" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                </div>
+
+                <!-- Status Nikah & Anak -->
+                <div class="grid grid-cols-2 gap-2.5">
+                    <div>
+                        <label class="block font-semibold text-amber-200 mb-1">• Sudah Nikah ?</label>
+                        <select id="sudahNikah" required class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white focus:border-amber-400 outline-none">
+                            <option value="" disabled selected class="bg-zinc-900 text-gray-500">Pilih...</option>
+                            <option value="Belum" class="bg-zinc-900">Belum</option>
+                            <option value="Sudah" class="bg-zinc-900">Sudah</option>
+                            <option value="Janda" class="bg-zinc-900">Janda</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-amber-200 mb-1">• Punya Anak ?</label>
+                        <select id="punyaAnak" required class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white focus:border-amber-400 outline-none">
+                            <option value="" disabled selected class="bg-zinc-900 text-gray-500">Pilih...</option>
+                            <option value="Belum" class="bg-zinc-900">Belum</option>
+                            <option value="Ada (1)" class="bg-zinc-900">Ada (1)</option>
+                            <option value="Ada (>1)" class="bg-zinc-900">Ada (>1)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Tombol Submit Form -->
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 hover:from-amber-400 hover:to-yellow-300 text-black font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-lg shadow-amber-500/25 border border-amber-300/50 transition-all flex items-center justify-center gap-2 mt-3">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>KIRIM DATA PENDAFTARAN VIA WA</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- KONSULTASI LANGSUNG -->
+        <div class="text-center space-y-2">
+            <a href="https://wa.me/6281212920606?text=Halo%20RP%20Management,%20saya%20tertarik%20dengan%20lowongan%20kerja%20executive." target="_blank" class="block w-full bg-gradient-to-r from-emerald-600 via-green-500 to-emerald-600 hover:from-emerald-500 hover:to-green-400 text-white font-extrabold text-xs py-4 px-4 rounded-xl shadow-lg shadow-green-900/40 border border-green-400/30 transition-all">
+                <i class="fa-brands fa-whatsapp text-lg mr-1.5"></i> KONSULTASI LANGSUNG: 0812 1292 0606
+            </a>
+            <p class="text-[10px] text-gray-500 pt-1">© 2026 RP Management. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT OTOMATIS KE WA -->
+    <script>
+        function kirimPendaftaran(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('namaKtp').value;
+            const umur = document.getElementById('umur').value;
+            const tempatTinggal = document.getElementById('tempatTinggal').value;
+            const tbBb = document.getElementById('tbBb').value;
+            const sudahNikah = document.getElementById('sudahNikah').value;
+            const punyaAnak = document.getElementById('punyaAnak').value;
+
+            const noWaAdmin = "6281212920606";
+
+            let pesan = `Mohon Di Isi Terlebih Dahulu Data Di Bawah ⬇️\n\n`;
+            pesan += `•Nama Sesuai KTP : ${nama}\n`;
+            pesan += `•Umur : ${umur}\n`;
+            pesan += `•Tempat Tinggal Sekarang: ${tempatTinggal}\n`;
+            pesan += `•TB & BB : ${tbBb}\n`;
+            pesan += `•Sudah Nikah ? : ${sudahNikah}\n`;
+            pesan += `•Punya Anak ? : ${punyaAnak}\n`;
+
+            const linkWa = `https://wa.me/${noWaAdmin}?text=${encodeURIComponent(pesan)}`;
+            window.open(linkWa, '_blank');
+        }
+    </script>
+</body>
+</html>
+
