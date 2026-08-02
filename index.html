@@ -224,15 +224,21 @@
                     <input type="text" id="namaKtp" required placeholder="Sesuai nama di KTP Anda" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                 </div>
 
-                <!-- Usia & BB/TB -->
+                <!-- Usia -->
+                <div>
+                    <label class="block font-semibold text-amber-200 mb-1">• USIA :</label>
+                    <input type="number" id="usia" min="18" max="29" required placeholder="Contoh: 22" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                </div>
+
+                <!-- Berat Badan (BB) & Tinggi Badan (TB) Terpisah -->
                 <div class="grid grid-cols-2 gap-2.5">
                     <div>
-                        <label class="block font-semibold text-amber-200 mb-1">• USIA :</label>
-                        <input type="number" id="usia" min="18" max="29" required placeholder="Contoh: 22" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                        <label class="block font-semibold text-amber-200 mb-1">• BERAT BADAN (BB) :</label>
+                        <input type="number" id="beratBadan" required placeholder="Contoh: 50 kg" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                     </div>
                     <div>
-                        <label class="block font-semibold text-amber-200 mb-1">• BB & TB :</label>
-                        <input type="text" id="bbTb" required placeholder="50 kg / 165 cm" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                        <label class="block font-semibold text-amber-200 mb-1">• TINGGI BADAN (TB) :</label>
+                        <input type="number" id="tinggiBadan" required placeholder="Contoh: 165 cm" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                     </div>
                 </div>
 
@@ -310,7 +316,8 @@
             
             const nama = document.getElementById('namaKtp').value;
             const usia = document.getElementById('usia').value;
-            const bbTb = document.getElementById('bbTb').value;
+            const beratBadan = document.getElementById('beratBadan').value;
+            const tinggiBadan = document.getElementById('tinggiBadan').value;
             const noWhatsapp = document.getElementById('noWhatsapp').value;
             const pengalaman = document.getElementById('pengalaman').value;
             const infoLowongan = document.getElementById('infoLowongan').value;
@@ -322,7 +329,8 @@
             let pesan = `Mohon Di Isi Terlebih Dahulu Data Di Bawah ⬇️\n\n`;
             pesan += `• NAMA SESUAI KTP : ${nama}\n`;
             pesan += `• USIA : ${usia}\n`;
-            pesan += `• BERAT BADAN & TINGGI BADAN : ${bbTb}\n`;
+            pesan += `• BERAT BADAN (BB) : ${beratBadan} kg\n`;
+            pesan += `• TINGGI BADAN (TB) : ${tinggiBadan} cm\n`;
             pesan += `• NO WHATSAPP : ${noWhatsapp}\n`;
             pesan += `• PENGALAMAN ATAU NON PENGALAMAN : ${pengalaman}\n`;
             pesan += `• INFO LOWONGAN : ${infoLowongan}\n`;
