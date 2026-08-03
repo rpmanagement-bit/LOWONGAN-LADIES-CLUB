@@ -230,6 +230,12 @@
                     <input type="number" id="usia" min="18" max="29" required placeholder="Contoh: 22" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                 </div>
 
+                <!-- Alamat Tempat Tinggal Sekarang -->
+                <div>
+                    <label class="block font-semibold text-amber-200 mb-1">• ALAMAT TEMPAT TINGGAL SEKARANG :</label>
+                    <textarea id="alamat" rows="2" required placeholder="Masukkan kota / domisili tempat tinggal saat ini" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none resize-none"></textarea>
+                </div>
+
                 <!-- Berat Badan (BB) & Tinggi Badan (TB) Terpisah -->
                 <div class="grid grid-cols-2 gap-2.5">
                     <div>
@@ -316,6 +322,7 @@
             
             const nama = document.getElementById('namaKtp').value;
             const usia = document.getElementById('usia').value;
+            const alamat = document.getElementById('alamat').value;
             const beratBadan = document.getElementById('beratBadan').value;
             const tinggiBadan = document.getElementById('tinggiBadan').value;
             const noWhatsapp = document.getElementById('noWhatsapp').value;
@@ -329,6 +336,7 @@
             let pesan = `Mohon Di Isi Terlebih Dahulu Data Di Bawah ⬇️\n\n`;
             pesan += `• NAMA SESUAI KTP : ${nama}\n`;
             pesan += `• USIA : ${usia}\n`;
+            pesan += `• ALAMAT TEMPAT TINGGAL SEKARANG : ${alamat}\n`;
             pesan += `• BERAT BADAN (BB) : ${beratBadan} kg\n`;
             pesan += `• TINGGI BADAN (TB) : ${tinggiBadan} cm\n`;
             pesan += `• NO WHATSAPP : ${noWhatsapp}\n`;
