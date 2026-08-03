@@ -251,34 +251,17 @@
                     <input type="tel" id="noWhatsapp" required placeholder="08xxxxxxxxxx" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                 </div>
 
-                <!-- SEKSI SOSIAL MEDIA -->
-                <div class="p-3 bg-black/50 border border-amber-500/20 rounded-xl space-y-2.5">
-                    <label class="block font-bold text-amber-300 text-center uppercase tracking-wide">
-                        <i class="fa-solid fa-share-nodes text-amber-400 mr-1"></i> AKUN SOSIAL MEDIA
-                    </label>
-                    
-                    <!-- Instagram -->
-                    <div>
-                        <label class="block font-semibold text-amber-200 mb-1 flex items-center gap-1.5">
-                            <i class="fa-brands fa-instagram text-pink-500"></i> INSTAGRAM :
-                        </label>
-                        <input type="text" id="sosmedIg" placeholder="@username (kosongkan jika tidak ada)" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
-                    </div>
-
-                    <!-- TikTok -->
-                    <div>
-                        <label class="block font-semibold text-amber-200 mb-1 flex items-center gap-1.5">
-                            <i class="fa-brands fa-tiktok text-white"></i> TIKTOK :
-                        </label>
-                        <input type="text" id="sosmedTiktok" placeholder="@username (kosongkan jika tidak ada)" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
-                    </div>
-
-                    <!-- Facebook -->
-                    <div>
-                        <label class="block font-semibold text-amber-200 mb-1 flex items-center gap-1.5">
-                            <i class="fa-brands fa-facebook text-blue-500"></i> FACEBOOK :
-                        </label>
-                        <input type="text" id="sosmedFb" placeholder="Nama Akun / Link Profil (kosongkan jika tidak ada)" class="w-full bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
+                <!-- PILIH KANAN/KIRI SOSMED & USERNAME DALAM 1 BARIS -->
+                <div>
+                    <label class="block font-semibold text-amber-200 mb-1">• AKUN SOSIAL MEDIA :</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <select id="jenisSosmed" required class="col-span-1 bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white focus:border-amber-400 outline-none">
+                            <option value="Instagram" class="bg-zinc-900">Instagram</option>
+                            <option value="TikTok" class="bg-zinc-900">TikTok</option>
+                            <option value="Facebook" class="bg-zinc-900">Facebook</option>
+                            <option value="Tidak Ada" class="bg-zinc-900">Tidak Ada</option>
+                        </select>
+                        <input type="text" id="usernameSosmed" required placeholder="@username / nama akun" class="col-span-2 bg-black/80 border border-amber-500/35 rounded-xl p-3 text-white placeholder-gray-500 focus:border-amber-400 outline-none">
                     </div>
                 </div>
 
@@ -356,10 +339,9 @@
             const tinggiBadan = document.getElementById('tinggiBadan').value;
             const noWhatsapp = document.getElementById('noWhatsapp').value;
             
-            // Ambil Input Sosmed (jika kosong diisi '-')
-            const sosmedIg = document.getElementById('sosmedIg').value.trim() || '-';
-            const sosmedTiktok = document.getElementById('sosmedTiktok').value.trim() || '-';
-            const sosmedFb = document.getElementById('sosmedFb').value.trim() || '-';
+            // Ambil Pilihan Sosmed & Usernamenya
+            const jenisSosmed = document.getElementById('jenisSosmed').value;
+            const usernameSosmed = document.getElementById('usernameSosmed').value;
 
             const pengalaman = document.getElementById('pengalaman').value;
             const infoLowongan = document.getElementById('infoLowongan').value;
@@ -374,11 +356,8 @@
             pesan += `• ALAMAT TEMPAT TINGGAL SEKARANG : ${alamat}\n`;
             pesan += `• BERAT BADAN (BB) : ${beratBadan} kg\n`;
             pesan += `• TINGGI BADAN (TB) : ${tinggiBadan} cm\n`;
-            pesan += `• NO WHATSAPP : ${noWhatsapp}\n\n`;
-            pesan += `--- AKUN SOSIAL MEDIA ---\n`;
-            pesan += `• INSTAGRAM : ${sosmedIg}\n`;
-            pesan += `• TIKTOK : ${sosmedTiktok}\n`;
-            pesan += `• FACEBOOK : ${sosmedFb}\n\n`;
+            pesan += `• NO WHATSAPP : ${noWhatsapp}\n`;
+            pesan += `• AKUN SOSIAL MEDIA (${jenisSosmed}) : ${usernameSosmed}\n`;
             pesan += `• PENGALAMAN ATAU NON PENGALAMAN : ${pengalaman}\n`;
             pesan += `• INFO LOWONGAN : ${infoLowongan}\n`;
             pesan += `• STATUS MENIKAH : ${statusMenikah}\n`;
